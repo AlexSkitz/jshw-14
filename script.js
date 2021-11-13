@@ -1,6 +1,6 @@
 const car = {
     wheels: 4,
-    engine: engine,
+    engine: 'engine',
     doors: 4,
     sittings: 4,
     windows: 6,
@@ -34,10 +34,10 @@ class Car{
         this.doors = 4;
         this.sittings = 4;
         this.windows = 6;
-        this.controls = 'steering wheel, pedals',
+        this.controls = 'steering wheel, pedals';
     }
-    toStart: (controls)=>(console.log("Ключ на старт")),
-    toStop: (controls)=>(console.log("Тормози")),
+    toStart =(controls)=>(console.log("Ключ на старт"));
+    toStop =(controls)=>(console.log("Тормози"));
 }
 
 class Coupe extends Car{
@@ -47,7 +47,7 @@ class Coupe extends Car{
         this.doors = 2;
         this.sittings = 3;
     }
-    toOpenHood: ()=>(console.log("Дерни рычаг и капот откроется"));
+    toOpenHood =()=>(console.log("Дерни рычаг и капот откроется"));
 }
 
 class Cabrio extends Coupe{
@@ -56,5 +56,5 @@ class Cabrio extends Coupe{
         this.hardRoof = false;
         this.roofType = roorType;
     }
-    toOpenRoof: ()=>(console.log("Нажми на кнопку - получишь результат"));
+    toOpenRoof =()=>(console.log("Нажми на кнопку - получишь результат"));
 }
